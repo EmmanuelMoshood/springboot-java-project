@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class StartApplication {
 
-    @GetMapping("/")
+     @GetMapping("/")
     public String index(final Model model) {
-        model.addAttribute("title", "This is a SpringBoot Static Web Application");
-        model.addAttribute("msg", "Application Is Deployed To Kuberneets");
+        model.addAttribute("title", "This is a Java Web Application");
+        model.addAttribute("msg", "Application Is Deployed");
         return "index";
     }
 
